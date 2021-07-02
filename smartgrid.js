@@ -1,12 +1,12 @@
 module.exports = {
-	columns: 12,
-	offset: "30px",
-	//mobileFirst: true,
-	container: {
-        maxWidth: "1630px",
+    columns: 12,
+    offset: "30px",
+    //mobileFirst: true,
+    container: {
+        maxWidth: "1197px",
         fields: "15px"
     },
-	breakPoints: {
+    breakPoints: {
         laptopMid: {
             width: "1550px",
             fields: "15px"
@@ -27,7 +27,7 @@ module.exports = {
             width: "920px",
             fields: "15px"
         },
-		md: {
+        md: {
             width: "920px",
             fields: "15px"
         },
@@ -44,6 +44,6 @@ module.exports = {
             fields: "5px"
             */
         }
-	},
+    },
     //detailedCalc: true
 };
