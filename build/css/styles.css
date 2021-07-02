@@ -209,6 +209,20 @@ img {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../fonts/Inter/Inter-Regular.ttf') format('truetype'), url("../fonts/Inter/Inter-Regular.woff") format("woff"), url("../fonts/Inter/Inter-Regular.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('../fonts/Inter/Inter-Bold.ttf') format('truetype'), url("../fonts/Inter/Inter-Bold.woff") format("woff"), url("../fonts/Inter/Inter-Bold.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'OpenSans-Regular';
 }
