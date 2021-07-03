@@ -1,14 +1,94 @@
 .banner{
-    .page__title-h1{
-      font-size: 22px;
-      .xs-block({
-        font-size: 15px;
-      });
-    //   .laptopMd(font-size, 152.65px);
-    //   .xs(font-size,67.4918px);
+    
+
+  .slider-banner {
+    background: transparent;
+    position: relative;
+    z-index: 100;
+
+    
+    .slick-list {
+        overflow: hidden;
     }
-    .page__text{
+    .slick-track{
+        display: flex;
+    }
+    .slick-arrow{
+      display: flex;
+      z-index: 200;
         
-    };
-   
+    }
+
+    .slick-dots li {
+        list-style: none;
+        
+    }
+
+    .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      
+      position: absolute;
+      top: 20px;
+    }
+
+    .slick-dots li button {
+      position: absolute;
+      
+      z-index: 4900;
+      height: 7px;
+      width: 10px;
+      font-size: 0;
+      border-radius: 50%;
+      border: transparent;
+      margin: 0 40px;
+      background-color: #fff;  
+      background-color: #000;
+      // top: 30px;
+      bottom: 0;
+      left: 50%;
   }
+
+    .slick-dots li.slick-active button {
+      background-color: red;
+    }
+
+  .page__img {
+    overflow: hidden;
+    img {
+      width: 100%;
+      transition: 10s ease;
+
+      .xs-block({
+        
+        display: none;
+      });
+    }
+  }
+}
+#nextArrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  // background-color: #000;
+  top: 400px;
+  // left: 20px;
+  // transform: rotate(180deg);
+  right: 52px;
+  z-index: 100;
+  
+}
+
+#prevArrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  // background-color: #000;
+  left: 52px;
+  top: 400px;
+  z-index: 100;
+}
+   
+}

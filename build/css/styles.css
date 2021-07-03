@@ -223,6 +223,13 @@ img {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Inter-Light';
+  src: url('../fonts/Inter/Inter-Light.ttf') format('truetype'), url("../fonts/Inter/Inter-Light.woff") format("woff"), url("../fonts/Inter/Inter-Light.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'OpenSans-Regular';
 }
@@ -332,6 +339,21 @@ input:focus {
   color: #3f3f3f;
 }
 
+.page__text_sm {
+  font-family: "Inter-Light";
+  font-size: 16px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.page__text_more {
+  font-family: "Inter-Regular";
+  font-size: 18px;
+  line-height: 23px;
+  color: #3f3f3f;
+}
+
 .header-wrapper {
   display: -webkit-box;
   display: flex;
@@ -339,6 +361,7 @@ input:focus {
           justify-content: space-between;
   -webkit-box-align: center;
           align-items: center;
+  padding: 20px 0;
 }
 
 .header-wrapper .left {
@@ -348,8 +371,179 @@ input:focus {
           align-items: center;
 }
 
-.banner .page__title-h1 {
-  font-size: 22px;
+.header-wrapper .left .logo {
+  margin-right: 80px;
+}
+
+.header-wrapper .left .price,
+.header-wrapper .left .delivery,
+.header-wrapper .left .Guarantee,
+.header-wrapper .left .contacts {
+  margin-right: 40px;
+}
+
+.banner .slider-banner {
+  background: transparent;
+  position: relative;
+  z-index: 100;
+}
+
+.banner .slider-banner .slick-list {
+  overflow: hidden;
+}
+
+.banner .slider-banner .slick-track {
+  display: -webkit-box;
+  display: flex;
+}
+
+.banner .slider-banner .slick-arrow {
+  display: -webkit-box;
+  display: flex;
+  z-index: 200;
+}
+
+.banner .slider-banner .slick-dots li {
+  list-style: none;
+}
+
+.banner .slider-banner .slick-dots {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  list-style: none;
+  position: absolute;
+  top: 20px;
+}
+
+.banner .slider-banner .slick-dots li button {
+  position: absolute;
+  z-index: 4900;
+  height: 7px;
+  width: 10px;
+  font-size: 0;
+  border-radius: 50%;
+  border: transparent;
+  margin: 0 40px;
+  background-color: #fff;
+  background-color: #000;
+  bottom: 0;
+  left: 50%;
+}
+
+.banner .slider-banner .slick-dots li.slick-active button {
+  background-color: red;
+}
+
+.banner .slider-banner .page__img {
+  overflow: hidden;
+}
+
+.banner .slider-banner .page__img img {
+  width: 100%;
+  -webkit-transition: 10s ease;
+  transition: 10s ease;
+}
+
+.banner #nextArrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 400px;
+  right: 52px;
+  z-index: 100;
+}
+
+.banner #prevArrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 52px;
+  top: 400px;
+  z-index: 100;
+}
+
+.guarantee-check {
+  background-color: #0171AD;
+}
+
+.guarantee-check-wrapper {
+  padding: 17px 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  text-align: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  opacity: 0.8;
+}
+
+.guarantee-check-wrapper .page__text_sm {
+  margin-right: 10px;
+}
+
+.choose-device-wrapper {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.choose-device-wrapper .item-wrapper {
+  display: -webkit-box;
+  display: flex;
+}
+
+.choose-device-wrapper .item {
+  position: relative;
+  width: 590px;
+  z-index: 10;
+}
+
+.choose-device-wrapper .item .page__text_more {
+  position: relative;
+}
+
+.choose-device-wrapper .item .page__img {
+  position: relative;
+}
+
+.choose-device-wrapper .item .page__img img {
+  position: relative;
+}
+
+.choose-device-wrapper .item .page__img img .hover {
+  position: absolute;
+}
+
+.choose-device-wrapper .hover {
+  position: absolute;
+  z-index: 100;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  height: 505px;
+  width: 590px;
+  margin: 0 auto;
+  visibility: hidden;
+  background-color: #01223770;
+}
+
+.choose-device-wrapper .hover .page__text_more {
+  color: #fff;
+  margin: 0 auto;
+}
+
+.choose-device-wrapper .item:hover .hover {
+  visibility: visible;
 }
 
 @media screen and (max-width: 1550px) {
@@ -438,7 +632,7 @@ input:focus {
 }
 
 @media screen and (max-width: 576px) {
-  .banner .page__title-h1 {
-    font-size: 15px;
+  .banner .slider-banner .page__img img {
+    display: none;
   }
 }
