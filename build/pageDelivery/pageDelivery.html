@@ -4,14 +4,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-		<title>Заголовок страницы</title>
+		<base href="../">
+		<title>Доставка</title>
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 	</head>
 	<body>
 		<div class="page">
-			<button class="debugGrid-btn debugGrid-btn__create" onclick="debugGridCreate()"></button>
-			<button class="debugGrid-btn debugGrid-btn__remove debugGrid-btn__hidden" onclick="debugGridRemove()"></button>
-			<div class="debugGrid debugGrid__z-index-negative"></div>
 			<header class="header">
 				<div class="wrapper">
 					<div class="header-wrapper">
@@ -33,65 +31,33 @@
 					</div>
 				</div>
 			</header>
-			<section class="guarantee-check">
-				<div class="wrapper">
-					<div class="guarantee-check-wrapper">
-						<p class="page__text_sm">ПРОВЕРКА ГАРАНТИИ</p>
-						<div class="page__img"><img src="assets/img/arrow.svg" alt=""></div>
-					</div>
-				</div>
-			</section>
-			<section class="banner">
-				<div class="slider-banner">
-					<div class="page__img"><img src="assets/img/banner-slide-1.png" alt=""></div>
-					<div class="page__img"><img src="assets/img/slide-2.png" alt=""></div>
-				</div>
-				<div class="prevArrow" id="prevArrow"><img src="assets/img/arrow-left-slider.svg"></div>
-				<div class="nextArrow" id="nextArrow"><img src="assets/img/arrow-right-slider.svg"></div>
-			</section>
-			<section class="choose-device">
-				<div class="wrapper">
-					<p class="page__text_else">Выберите тип вашего устройства</p>
-					<div class="choose-device-wrapper">
-						<div class="item-wrapper">
-							<div class="item">
-								<div class="page__img"><img src="assets/img/device-1.png" alt=""></div>
-								<p class="page__text_more">Ремонт Ноутбуков</p>
-							</div>
-							<div class="hover">
-								<p class="page__text_more">текст ховер</p>
-							</div>
+			<main class="page">
+				<section class="pageDelivery">
+					<div class="page__img"><img src="assets/img/delivery-banner.png" alt=""></div>
+					<div class="wrapper">
+						<div class="text">
+							<p class="page__text_else">Доставка</p>
+							<p class="page__text_else-m">Бесплатная доставка в ремонт и обратная доставка после ремонта. Срочный выезд курьера — 1 час</p>
 						</div>
-						<div class="item-wrapper">
-							<div class="item">
-								<div class="page__img"><img src="assets/img/device-2.png" alt=""></div>
-								<p class="page__text_more">Ремонт Ноутбуков</p>
+						<div class="pageDelivery-wrapper">
+							<div class="row">
+								<div class="pageDelivery-item">
+									<p class="page__text_30">Бесплатная доставка в сервисный центр</p>
+									<p class="page__text_more">Удобство клиента играет для нас первостепенную роль, мы знаем как драгоценно ваше время. В удобное для вас время и место мы отправим курьера и бесплатно доставим ваш ноутбук на ремонт в сервисный центр.</p>
+								</div>
+								<div class="pageDelivery-item">
+									<p class="page__text_30">Бережное отношение к вашей технике</p>
+									<p class="page__text_more">При доставке ноутбуков мы используем специальные рюкзаки, которые обеспечивают отличную защиту от любого рода повреждений. В сервисном центре наклеиваем защитную пленку на экраны, которая исключает появление потертостей и царапин.</p>
+								</div>
 							</div>
-							<div class="hover">
-								<p class="page__text_more">текст ховер</p>
-							</div>
-						</div>
-						<div class="item-wrapper">
-							<div class="item">
-								<div class="page__img"><img src="assets/img/device-3.png" alt=""></div>
-								<p class="page__text_more">Ремонт Ноутбуков</p>
-							</div>
-							<div class="hover">
-								<p class="page__text_more">текст ховер</p>
-							</div>
-						</div>
-						<div class="item-wrapper">
-							<div class="item">
-								<div class="page__img"><img src="assets/img/device-4.png" alt=""></div>
-								<p class="page__text_more">Ремонт Ноутбуков</p>
-							</div>
-							<div class="hover">
-								<p class="page__text_more">текст ховер</p>
+							<div class="pageDelivery-big-item">
+								<p class="page__text_30">Полный комплект документов</p>
+								<p class="page__text_more">При приеме оборудования мы заполняем специальный бланк заказа, в котором указываем краткую информацию об оборудовании, его комплектации, внешнем виде,а также фиксируем все внешние недостатки и гарантируем бережное отношение.</p>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			</main>
 			<section class="callback">
 				<div class="wrapper">
 					<p class="page__text_else">Обратный звонок</p>

@@ -1,0 +1,21 @@
+section.callback
+    .wrapper
+        p.page__text_else Обратный звонок
+        .callback-wrapper
+            .callback-item
+                p.page__text_vsm Ваш телефон <span> *
+                form(action="")
+                    input(type="text" placeholder="8 (___) ___-__-__")
+            .callback-item
+                p.page__text_vsm Ваше устройство <span> *</span>
+                .__select(data-state="")
+                    .__select__title(data-default="1") ТИП УСТРОЙСТВА
+                    .__select__content
+                        input#singleSelect0(type="radio" data-state="" checked).__select__input
+                        label(for="singleSelect0").__select__label Компьютер
+                        input#singleSelect1(type="radio" name="singleSelect" value="1").__select__input
+                        label(for="singleSelect1").__select__label Монитор
+                        //- input#singleSelect1(type="radio" name="singleSelect" value="2").__select__input
+                        //- label(for="singleSelect1").__select__label xl
+            .callback-item
+                button.page__btn ОСТАВИТЬ ЗАЯВКУ
