@@ -7,6 +7,10 @@ module.exports = {
         fields: "15px"
     },
     breakPoints: {
+        desktop: {
+            width: "1920px",
+            fields: "15px"
+        },
         laptopMid: {
             width: "1550px",
             fields: "15px"
