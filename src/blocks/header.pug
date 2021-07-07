@@ -1,5 +1,40 @@
 header.header
     .wrapper
+        .header-mob
+            .left-side
+                .logo
+                    a(href="../")
+                        .page__img
+                            img(src="assets/img/logo.svg", alt="")
+            .right-side
+                .burger
+                    button(type="button" onclick="openBlock()")#burgerBtn.icon
+                        span
+                        span
+                        span
+                        span
+                    #other.other
+                        .inner
+                            .wrapper
+                                .nav-center
+                                    .page__link
+                                        a(href="news/news.html") Ремонт ноутбуков
+                                    .page__link
+                                        a(href="shop/shop.html") Ремонт мониторов
+                                    .page__link
+                                        a(href="forumPage/forumPage.html") Ремонт ПК
+                                    .page__link
+                                        a(href="backstageAllVideo/backstageAllVideo.html") Ремонт моноблоков
+                                    .page__link
+                                        a(href="donatePage/donatePage.html") О нас
+                                    .page__link
+                                        a(href="donatePage/donatePage.html") Доставка
+                                    .page__link
+                                        a(href="donatePage/donatePage.html") Гарантия
+                                    .page__link
+                                        a(href="donatePage/donatePage.html") Контакты
+                                    .page__link.moreb
+                                        a(href="donatePage/donatePage.html") 8 (999) 999-99-99
         .header-wrapper
             .left
                 .logo
@@ -22,6 +57,6 @@ header.header
                 .Guarantee
                     a(href="pageGuarantee/pageGuarantee.html").page__text Гарантия
                 .contacts
-                    a(href="#").page__text Контакты
+                    a(href="pageContacts/pageContacts.html").page__text Контакты
             .right
                 a(href="tel: +7 (999) 999-99-99").page__text 8 (999) 999-99-99

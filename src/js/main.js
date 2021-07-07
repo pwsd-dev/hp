@@ -17,9 +17,65 @@ $(document).ready(function () {
         touchMove: false,
         prevArrow: document.querySelector('#prevArrow'),
         nextArrow: document.querySelector('#nextArrow'),
-
+        variableWidth: false,
         dots: false,
         fade: true,
+        responsive: [
+            {
+                breakpoint: 405,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: false,
+                    arrows: false,
+                    // centerMode: true,
+                    // touchMove: true,
+                }
+            }
+        ],
+
+    });
+
+});
+
+$(document).ready(function () {
+    $('.slider-banner-mob').slick({
+
+
+        slidesToShow: 1,
+        autoplay: false,
+        infinite: true,
+        speed: 1800,
+        adaptiveHeight: true,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        pauseOnDotsHover: true,
+        easing: 'ease',
+        draggale: true,
+        swipe: true,
+        touchTreshold: 20,
+        touchMove: false,
+        prevArrow: document.querySelector('#prevArrow-2'),
+        nextArrow: document.querySelector('#nextArrow-2'),
+
+        arrows: false,
+        variableWidth: false,
+        dots: false,
+        fade: true,
+        responsive: [
+            {
+                breakpoint: 405,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: false,
+                    // arrows: true,
+
+                    // centerMode: true,
+                    // touchMove: true,
+                }
+            }
+        ],
 
     });
 
@@ -49,4 +105,15 @@ if (selectSingle) {
             selectSingle.setAttribute('data-state', '');
         });
     }
+}
+
+function openBlock() {
+    const burgerBtn = document.getElementById("burgerBtn");
+    const otherId = document.getElementById("other");
+    burgerBtn.classList.toggle("active");
+
+    otherId.classList.toggle("hidden");
+    otherId.querySelector('.inner').classList.toggle('active');
+    const basketBtn = document.getElementById("basketBtn")
+    // basketBtn.classList.toggle("active");
 }

@@ -4,20 +4,192 @@
 
         text-align: center;
         margin: 100px 0 50px 0;
+
+        .sm-block({
+            font-size: 26px;
+            // max-width: 240px;
+
+            margin: 50px 0 50px 0;
+        });
+    }
+
+    .page__img {
+
+        .sm-block({
+            display: none;
+        });
+
+        
+    }
+
+    .mob {
+        display: none;
+
+        .page__img {
+
+            .sm-block({
+                display: block;
+            });
+
+            
+    
+            img {
+
+                width: 100%;
+            }
+        }
+
+        .sm-block({
+            display: block;
+        });
+
     }
 
     &-wrapper {
         display: flex;
+        justify-content: center;
+        padding-bottom: 150px;
+
+        .sm-block({
+            flex-direction: column;
+            padding-bottom: 80px;
+        });
 
         .left {
+            margin-right: 125px;
+
+            .sm-block({
+                margin-right: 0;
+            });
 
             .row {
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 472px;
+
+                .sm-block({
+                    width: 320px;
+                });
                 
+                .page__text_sm {
+
+                    color: #3F3F3F;
+                    text-transform: none;
+                    position: relative;
+                    margin-bottom: 15px;
+
+
+                    &:hover {
+                        color: #0096d6;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 1px;
+                            background-color: #0096d6;
+                            left: 0;
+                            bottom: 0;
+
+                            .sm-block({
+                                width: 320px;
+                            });
+                        }
+
+                    }
+                }
+
+                .page__text_b-m {
+
+                    color: #3F3F3F;
+                    position: relative;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 600px;
+                        height: 1px;
+                        background-color: #efefef;
+                        top: -12.5px;
+                        left: -413px;
+
+                        .sm-block({
+                            width: 320px;
+                        });
+                    }
+                }
             }
         }
 
         .right {
 
+            margin-left: 125px;
+
+            .sm-block({
+                margin-left: 0;
+            });
+
+            .row {
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 472px;
+
+                .sm-block({
+                    width: 320px;
+                });
+                
+                .page__text_sm {
+
+                    color: #3F3F3F;
+                    text-transform: none;
+                    position: relative;
+                    margin-bottom: 15px;
+
+
+                    &:hover {
+                        color: #0096d6;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 1px;
+                            background-color: #0096d6;
+                            left: 0;
+                            bottom: 0;
+
+                            // .sm-block({
+                            //     width: 320px;
+                            // });
+                        }
+
+                    }
+                }
+
+                .page__text_b-m {
+
+                    color: #3F3F3F;
+                    position: relative;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 600px;
+                        height: 1px;
+                        background-color: #efefef;
+                        top: -12.5px;
+                        left: -550px;
+
+                        .sm-block({
+                            width: 320px;
+                        });
+                    }
+                }
+            }
         }
     }
 }

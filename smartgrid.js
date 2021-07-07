@@ -31,10 +31,6 @@ module.exports = {
             width: "920px",
             fields: "15px"
         },
-        md: {
-            width: "920px",
-            fields: "15px"
-        },
         sm: {
             width: "720px"
         },

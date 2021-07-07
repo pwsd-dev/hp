@@ -21,6 +21,12 @@
         .item-wrapper {
 
             display: flex;
+
+            .laptopMini-block({
+                margin: 0 auto;
+                justify-content: center;
+                
+            });
         }
 
         .item {
@@ -28,6 +34,12 @@
             position: relative;
             width: 590px;
             z-index: 10;
+
+            .sm-block({
+                width: 280px;
+            });
+
+            
 
             .page__text_more {
                 position: relative;
@@ -71,6 +83,11 @@
             opacity: 0;
             background-color: #384146;
 
+            .sm-block({
+                width: 280px;
+                height: 251px;
+            });
+
             
 
             .page__text_more {
@@ -78,6 +95,12 @@
                 color: #fff;
                 margin: 0 auto;
                 max-width: 355px;
+
+                .sm-block({
+                    max-width: 250px;
+                    margin: 0 auto;
+                    text-align: center
+                });
             }
         }
 

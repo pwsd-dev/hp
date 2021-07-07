@@ -3,12 +3,65 @@
 
     padding-bottom: 150px;
 
+
+    .sm-block({
+        padding-bottom: 50px;
+    });
+
+    .mob {
+
+        display: none;
+
+        .sm-block({
+            display: block;
+        });
+
+        .delivery-mob-wrapper {
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .delivery-mob-item {
+            background-color: #E8F3F1;
+            padding: 20px 20px 40px 20px;
+
+            margin-bottom: 20px;
+            border-radius: 10px;
+
+            .page__text_30 {
+
+                margin-bottom: 15px;
+                // max-width: 260px;
+            }
+
+        }
+
+        .page__text_else {
+            margin: 30px auto 50px auto;
+            text-align: center;
+
+        }
+
+        .page__img {
+
+            img {
+
+                width: 100%;
+            }
+        }
+    }
+
     .bg-delivery {
 
         background-image: url(../assets/img/guarantee-bg-2.png);
         background-repeat: no-repeat;
         background-size: cover;
         height: 600px;
+
+        .sm-block({
+            display: none;
+        });
 
         .guarantee-item {
 
@@ -24,6 +77,11 @@
             top: 180px;
             // height: 211px;
 
+            .sm-block({
+                display: none;
+            });
+    
+
             .page__text_30 {
                 margin-bottom: 20px;
 
@@ -38,6 +96,11 @@
 
                 display: flex;
                 align-items: flex-start;
+
+                .sm-block({
+                    display: none;
+                });
+        
 
                 .page__text_vsm {
                     margin-right: 5px;
@@ -58,6 +121,11 @@
         margin: 0 auto;
         padding-top: 100px;
 
+        .sm-block({
+            display: none;
+        });
+
+
         .page__text_else-m {
 
             color: #3f3f3f;
@@ -70,6 +138,11 @@
 
         display: flex;
         justify-content: space-between;
+
+        .sm-block({
+            display: none;
+        });
+
         .pageDelivery-item {
             width: 550px;
             margin-right: 20px;
@@ -95,6 +168,11 @@
     .pageDelivery-big-item {
         padding: 100px 0 108px 95px;
         background-color: #E8F3F1;
+
+        .sm-block({
+            display: none;
+        });
+
     
 
         .page__text_more {
