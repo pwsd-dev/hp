@@ -346,6 +346,14 @@ input:focus {
   color: #fff;
 }
 
+.page__text_sm-h {
+  font-family: "Inter-Regular";
+  font-size: 16px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .page__text_vsm {
   font-family: "Inter-Light";
   font-size: 14px;
@@ -408,6 +416,11 @@ input:focus {
   background-color: #3f3f3f;
   border: transparent;
   padding: 0 33px;
+  border-radius: 5px;
+}
+
+.page__btn:hover {
+  background-color: #5D6468;
 }
 
 .header .header-mob {
@@ -708,19 +721,21 @@ input:focus {
   width: 180px;
   z-index: 100;
   position: absolute;
+  top: 43px;
+  left: -10px;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
 
-.header-wrapper .left .price .price-hover .page__text_sm {
+.header-wrapper .left .price .price-hover .page__text_sm-h {
   color: #3f3f3f;
   text-transform: none;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-.header-wrapper .left .price .price-hover .page__text_sm:hover {
+.header-wrapper .left .price .price-hover .page__text_sm-h:hover {
   color: #0096D6;
 }
 
@@ -1052,6 +1067,11 @@ button {
   margin-right: 10px;
 }
 
+.guarantee-check-wrapper .page__img {
+  position: relative;
+  top: -1px;
+}
+
 .choose-device {
   padding-bottom: 50px;
 }
@@ -1200,18 +1220,19 @@ button {
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
   width: 100%;
   height: 70%;
-  padding: 8px 25px 8px 3px;
+  padding: 8px 25px 8px 15px;
   border-radius: 5px;
   font-family: "Inter-Regular";
   color: #3f3f3f;
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 2.2px;
+  letter-spacing: 1.5px;
   background-color: #fff;
+  text-transform: none;
   cursor: pointer;
 }
 
@@ -1269,8 +1290,8 @@ button {
 
 .callback .callback-wrapper .callback-item .__select__content {
   position: absolute;
-  top: 60px;
-  left: 3px;
+  top: 50px;
+  left: 0px;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -1286,8 +1307,8 @@ button {
   transition: all 0.3s ease-out;
   opacity: 0;
   z-index: 8;
-  height: 110px;
-  width: 250px;
+  height: 170px;
+  width: 257px;
 }
 
 .callback .callback-wrapper .callback-item .__select__input {
@@ -1324,7 +1345,7 @@ button {
 }
 
 .callback .callback-wrapper .callback-item .__select__label:hover {
-  background-color: #D8093A !important;
+  background-color: #0096D6 !important;
   color: #ffffff;
 }
 
@@ -1333,7 +1354,7 @@ button {
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  padding: 0 16px;
+  padding: 0 15px;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   font-size: 38px;
@@ -1351,7 +1372,7 @@ button {
 }
 
 .callback .callback-wrapper .callback-item .__select__label1:hover {
-  background-color: #D8093A !important;
+  background-color: #0096D6 !important;
   color: #ffffff;
 }
 
@@ -1377,7 +1398,7 @@ button {
 }
 
 .callback .callback-wrapper .callback-item .__select__label2:hover {
-  background-color: #D8093A !important;
+  background-color: #0096D6 !important;
   color: #ffffff;
 }
 
@@ -1825,7 +1846,7 @@ button {
 }
 
 .pageContacts-wrapper .left-contacts .text .page__text_30 {
-  margin-bottom: 19px;
+  margin-bottom: 15px;
 }
 
 .pageContacts-wrapper .left-contacts .text .page__text_more {
@@ -1833,7 +1854,15 @@ button {
 }
 
 .pageContacts-wrapper .left-contacts .text .page__text_more span {
+  color: #3f3f3f;
+}
+
+.pageContacts-wrapper .left-contacts .text .page__text_more span:hover {
   color: #0096D6;
+}
+
+.pageContacts-wrapper .left-contacts .text div {
+  margin-bottom: 15px;
 }
 
 .pageContacts-wrapper .left-contacts .text .page__text_more a {
@@ -1845,6 +1874,16 @@ button {
 }
 
 .pageContacts-wrapper .left-contacts .text .underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #3f3f3f;
+  left: 0;
+  bottom: 0;
+}
+
+.pageContacts-wrapper .left-contacts .text .underline:hover::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -1871,11 +1910,11 @@ button {
   }
 
   .banner #nextArrow {
-    top: 200px;
+    top: 250px;
   }
 
   .banner #prevArrow {
-    top: 200px;
+    top: 250px;
   }
 }
 
