@@ -5,7 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 		<base href="../">
-		<title>Контакты</title>
+		<title>Контакты</title><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 	</head>
 	<body>
@@ -61,7 +62,14 @@
 			</header>
 			<main class="page">
 				<section class="pageContacts">
-					<div class="page__img"><img src="assets/img/pageContacts.png" alt=""></div>
+					<div class="mob">
+						<div class="bg">
+							<div class="bg-inner"></div>
+						</div>
+					</div>
+					<div class="desktop">
+						<div class="bg-banner"></div>
+					</div>
 					<p class="page__text_else">Контакты</p>
 					<div class="wrapper">
 						<div class="pageContacts-wrapper">
@@ -77,7 +85,8 @@
 								</div>
 							</div>
 							<div class="right-contacts">
-								<div class="page__img"><img src="assets/img/map.png" alt=""></div>
+								<div class="mob-map"><div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a href="https://yandex.ru/maps/10658/vladimir-oblast/house/derevnya_stupino_82/YEgYdgNjSEUHQFtsfXh1dnljYA==/?ll=41.043100%2C56.447504&utm_medium=mapframe&utm_source=maps&z=17.15" style="color:#eee;font-size:12px;position:absolute;top:14px;">Деревня Ступино, 82 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=41.043100%2C56.447504&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D41.043%252C56.448%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%2592%25D0%25BB%25D0%25B0%25D0%25B4%25D0%25B8%25D0%25BC%25D0%25B8%25D1%2580%25D1%2581%25D0%25BA%25D0%25B0%25D1%258F%2520%25D0%25BE%25D0%25B1%25D0%25BB%25D0%25B0%25D1%2581%25D1%2582%25D1%258C%252C%2520%25D0%259A%25D0%25B0%25D0%25BC%25D0%25B5%25D1%2588%25D0%25BA%25D0%25BE%25D0%25B2%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9%2520%25D1%2580%25D0%25B0%25D0%25B9%25D0%25BE%25D0%25BD%252C%2520%25D0%25B4%25D0%25B5%25D1%2580%25D0%25B5%25D0%25B2%25D0%25BD%25D1%258F%2520%25D0%25A1%25D1%2582%25D1%2583%25D0%25BF%25D0%25B8%25D0%25BD%25D0%25BE%252C%252082&z=17.15" width="320" height="280" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div></div>
+								<div class="map-wrapper"><div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a href="https://yandex.ru/maps/10658/vladimir-oblast/house/derevnya_stupino_82/YEgYdgNjSEUHQFtsfXh1dnljYA==/?ll=41.043100%2C56.447504&utm_medium=mapframe&utm_source=maps&z=17.15" style="color:#eee;font-size:12px;position:absolute;top:14px;">Деревня Ступино, 82 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=41.043100%2C56.447504&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D41.043%252C56.448%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%2592%25D0%25BB%25D0%25B0%25D0%25B4%25D0%25B8%25D0%25BC%25D0%25B8%25D1%2580%25D1%2581%25D0%25BA%25D0%25B0%25D1%258F%2520%25D0%25BE%25D0%25B1%25D0%25BB%25D0%25B0%25D1%2581%25D1%2582%25D1%258C%252C%2520%25D0%259A%25D0%25B0%25D0%25BC%25D0%25B5%25D1%2588%25D0%25BA%25D0%25BE%25D0%25B2%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9%2520%25D1%2580%25D0%25B0%25D0%25B9%25D0%25BE%25D0%25BD%252C%2520%25D0%25B4%25D0%25B5%25D1%2580%25D0%25B5%25D0%25B2%25D0%25BD%25D1%258F%2520%25D0%25A1%25D1%2582%25D1%2583%25D0%25BF%25D0%25B8%25D0%25BD%25D0%25BE%252C%252082&z=17.15" width="590" height="493" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div></div>
 							</div>
 						</div>
 					</div>
@@ -135,5 +144,6 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
 		<script src="js/main.js"></script>
+		<script src="js/modal.js"></script>
 	</body>
 </html>

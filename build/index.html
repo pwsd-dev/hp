@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-		<title>Заголовок страницы</title>
+		<title>Заголовок страницы</title><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 	</head>
 	<body>
@@ -63,8 +64,7 @@
 			</header>
 			<section class="guarantee-check">
 				<div class="wrapper">
-					<div class="guarantee-check-wrapper">
-						<p class="page__text_sm">ПРОВЕРКА ГАРАНТИИ</p>
+					<div class="guarantee-check-wrapper"><a class="page__text_sm open-modal" data-modal="modal">ПРОВЕРКА ГАРАНТИИ</a>
 						<div class="page__img"><img src="assets/img/arrow.svg" alt=""></div>
 					</div>
 				</div>
@@ -222,10 +222,20 @@
 					</div>
 				</div>
 			</footer>
+			<div class="modal" id="modal" data-modal="modal">
+				<div class="modal__in modal-container">
+					<div class="modalToggles">
+						<button class="close">
+							<div class="page__img"><img class="close-modal" src="assets/img/krestik.svg" alt="" data-modal="modal"></div>
+						</button>
+					</div>
+				</div>
+			</div>
 		</div><script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
 		<script src="js/main.js"></script>
+		<script src="js/modal.js"></script>
 	</body>
 </html>

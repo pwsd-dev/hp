@@ -8,12 +8,83 @@
         text-align: center;
     }
 
+    .desktop {
+
+        background-image: url(../assets/img/pageContacts.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+
+        .bg-banner {
+
+            width: 430px;
+            height: 219px;
+            background-color: #fff;
+            opacity: .8;
+            border-radius: 10px;
+            position: relative;
+            top: 150px;
+            left: 360px;
+        }
+
+        .sm-block({
+            display: none;
+        });
+    }
+
+    .mob {
+
+        display: none;
+
+        .bg {
+            background-image: url(../assets/img/mob-contacts.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+
+            .bg-inner {
+
+                width: 280px;
+                height: 160px;
+                opacity: .8;
+                background-color: #fff;
+                margin: 0 auto;
+                position: relative;
+                top: 50px;
+                border-radius: 10px;
+            }
+
+        }
+
+        .sm-block({
+            display: block;
+        });
+    }
+
+    .page__img {
+        
+        // img {
+        //     height: 100%;
+        // }
+
+        // .sm-block({
+        //     height: 300px;
+        // });
+    }
+
     &-wrapper {
 
         display: flex;
         justify-content: center;
 
         padding-bottom: 150px;
+
+        .sm-block({
+            flex-direction: column;
+            // margin: 0 auto;
+            // justify-content: center;
+            padding-bottom: 50px;
+        });
 
         .left-contacts {
             // width: 586px;
@@ -24,6 +95,11 @@
 
             margin-right: 10px;
 
+            .sm-block({
+                padding: 20px 50px 40px 43px;
+                margin-bottom: 20px;
+            });
+
             .text {
 
                 max-width: 350px;
@@ -33,6 +109,10 @@
                 .page__text_30 {
 
                     margin-bottom: 15px;
+
+                    .sm-block({
+                        font-size: 24px;
+                    });
                 }
 
                 .page__text_more {
@@ -40,6 +120,10 @@
                     
 
                     margin-bottom: 30px;
+
+                    .sm-block({
+                        font-size: 15px;
+                    });
 
                     span {
 
@@ -102,6 +186,38 @@
             }
 
 
+        }
+
+        .right-contacts {
+
+            .mob-map {
+
+                display: none;
+
+                .sm-block({
+
+                    display: block;
+                });
+            }
+
+            .map-wrapper {
+                width: 590px;
+                height: 500px;
+
+                position: relative;
+                top: 3px;
+
+                .sm-block({
+
+                    display: none;
+                });
+
+                div {
+
+                    width: 590px;
+                    height: 500px;
+                }
+            }
         }
     }
 }

@@ -20,7 +20,7 @@ $(document).ready(function () {
         prevArrow: document.querySelector('#prevArrow'),
         nextArrow: document.querySelector('#nextArrow'),
         variableWidth: false,
-        dots: false,
+        dots: true,
         fade: true,
         responsive: [
             {
@@ -62,7 +62,7 @@ $(document).ready(function () {
 
         arrows: false,
         variableWidth: false,
-        dots: false,
+        dots: true,
         fade: true,
         responsive: [
             {
