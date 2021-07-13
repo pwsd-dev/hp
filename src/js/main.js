@@ -7,7 +7,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         autoplay: false,
         infinite: true,
-        speed: 1800,
+        speed: 600,
         adaptiveHeight: true,
         pauseOnFocus: true,
         pauseOnHover: true,
@@ -21,7 +21,7 @@ $(document).ready(function () {
         nextArrow: document.querySelector('#nextArrow'),
         variableWidth: false,
         dots: true,
-        fade: true,
+        fade: false,
         responsive: [
             {
                 breakpoint: 405,
@@ -119,3 +119,14 @@ function openBlock() {
     const basketBtn = document.getElementById("basketBtn")
     // basketBtn.classList.toggle("active");
 }
+
+let button = document.querySelector('#button');
+let vhod = document.querySelector('#vhod-1');
+let vhod2 = document.querySelector('#vhod-2');
+
+
+button.addEventListener('click', () => {
+    vhod.classList.toggle('active');
+    vhod2.classList.toggle('active');
+
+})

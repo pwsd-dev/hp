@@ -1,10 +1,10 @@
 function animationToggle(element, open, classAnimatedContainer = '.modal-container', classOpen = 'zoomIn', classClose = 'zoomOut') {
     if (open) {
-        element.querySelector(classAnimatedContainer).classList.remove(classClose);
-        element.querySelector(classAnimatedContainer).classList.add(classOpen);
+        element.classList.remove(classClose);
+        element.classList.add(classOpen);
     } else {
-        element.querySelector(classAnimatedContainer).classList.add(classClose);
-        element.querySelector(classAnimatedContainer).classList.remove(classOpen);
+        element.classList.add(classClose);
+        element.classList.remove(classOpen);
     }
 }
 
@@ -25,6 +25,7 @@ function modalToggle(e) {
                 body.classList.toggle('modal-open');
             } else {
                 animationToggle(modalId, false);
+                console.log('close')
                 setTimeout(() => {
                     modalId.classList.toggle('page_hidden');
                     body.classList.toggle('modal-open');

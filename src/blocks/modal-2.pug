@@ -1,19 +1,18 @@
-.modal#modal(data-modal="modal")
+.modal#modal-2(data-modal="modal-2")
     .modal__in.modal-container
         .modalToggles
             button.close
                 .page__img
-                    img(src="assets/img/krestik-2.svg", alt="" data-modal="modal").close-modal
+                    img(src="assets/img/krestik-2.svg", alt="" data-modal="modal-2").close-modal
             .modal-vhod.active#vhod-1
-                p.page__text_else Проверка гарантии
+                p.page__text_else.mb20 Оставьте заявку
+                p.page__text.mb54 Или просто позвоните по тел. 8 (999) 999-99-99
                 form.form(action="")
                     .form-wrapper
-                        p.page__text_vsm Cтрана/регион приобретения <span> *
-                        input(type="text" placeholder="Россия")
-                        p.page__text_vsm Серийный номер <span> *
-                        input(type="text" placeholder="Пример: HU265BM18V")
+                        p.page__text_vsm Ваше имя <span> *
+                        input(type="text" placeholder="Иван")
                         p.page__text_vsm Ваш телефон <span> *
-                        input.smmb(type="text" placeholder="Пример: HU265BM18V")
+                        input(type="text" placeholder="+7 (___) ___-__-__" class="phone_mask")
                         p.page__text_vsm-2 Заполнив и отправив эту форму, вы предоставляете свое согласие на использование ваших данных в соотвествии с заявлением о конфиденциалности HP.<span> Подробнее о политике конфиденциалности HP
-                        .page__btn ПРОВЕРИТЬ ГАРАНТИЮ
+                        .page__btn Перезвоните мне
                         p.page__text_vsm  <span> * </span> Обязательные поля
