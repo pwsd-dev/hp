@@ -120,13 +120,17 @@ function openBlock() {
     // basketBtn.classList.toggle("active");
 }
 
+
 let button = document.querySelector('#button');
 let vhod = document.querySelector('#vhod-1');
 let vhod2 = document.querySelector('#vhod-2');
 
 
-button.addEventListener('click', () => {
-    vhod.classList.toggle('active');
-    vhod2.classList.toggle('active');
+if (button) {
 
-})
+    button.addEventListener('click', () => {
+        vhod.classList.toggle('active');
+        vhod2.classList.toggle('active');
+
+    })
+}
