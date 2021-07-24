@@ -29,7 +29,7 @@ function modalToggle(e) {
                 setTimeout(() => {
                     modalId.classList.toggle('page_hidden');
                     body.classList.toggle('modal-open');
-                }, 100);
+                }, 500);
 
             }
         } else if (el.classList.contains('modal') && !el.classList.contains('page_hidden')) {
@@ -38,7 +38,7 @@ function modalToggle(e) {
             setTimeout(() => {
                 el.classList.toggle('page_hidden');
                 body.classList.toggle('modal-open');
-            }, 100);
+            }, 500);
 
         } else if (e.key === 'Escape' && el.classList.contains('modal-open')) {
             let modals = document.querySelectorAll('.modal');

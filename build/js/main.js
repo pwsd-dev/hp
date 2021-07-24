@@ -121,16 +121,18 @@ function openBlock() {
 }
 
 
-let button = document.querySelector('#button');
-let vhod = document.querySelector('#vhod-1');
-let vhod2 = document.querySelector('#vhod-2');
+
+// let button = document.querySelector('#button');
+// let vhod = document.querySelector('#vhod-1');
+// let vhod2 = document.querySelector('#vhod-2');
 
 
-if (button) {
+// if (button) {
 
-    button.addEventListener('click', () => {
-        vhod.classList.toggle('active');
-        vhod2.classList.toggle('active');
+//     button.addEventListener('click', () => {
+//         vhod.classList.toggle('active');
+//         vhod2.classList.toggle('active');
 
-    })
-}
+//     })
+// }
+

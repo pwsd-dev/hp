@@ -1459,6 +1459,11 @@ button {
   visibility: hidden;
 }
 
+.modal .hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .modal.zoomOut {
   opacity: 1;
   visibility: visible;
