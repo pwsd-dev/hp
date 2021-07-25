@@ -238,6 +238,10 @@ body.modal-open {
   overflow: hidden;
 }
 
+body.js-open-modal {
+  overflow: hidden;
+}
+
 a,
 button {
   cursor: pointer;
@@ -1459,9 +1463,26 @@ button {
   visibility: hidden;
 }
 
-.modal .hide {
+.modal.active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  overflow-y: hidden;
+}
+
+.modal .overlay {
+  /* Скрываем подложку  */
   opacity: 0;
   visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4900;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .modal.zoomOut {
