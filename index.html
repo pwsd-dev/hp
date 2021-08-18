@@ -1,278 +1,334 @@
 <!DOCTYPE html>
-<html lang="ru"> 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-		<title>Заголовок страницы</title><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-		<link rel="stylesheet" href="css/styles.css" type="text/css">
-	</head>
-	<body>
-		<div class="page">
-			<button class="debugGrid-btn debugGrid-btn__create" onclick="debugGridCreate()"></button>
-			<button class="debugGrid-btn debugGrid-btn__remove debugGrid-btn__hidden" onclick="debugGridRemove()"></button>
-			<div class="debugGrid debugGrid__z-index-negative"></div>
-			<header class="header">
-				<div class="wrapper">
-					<div class="header-mob">
-						<div class="left-side">
-							<div class="logo"><a href="../">
-									<div class="page__img"><img src="assets/img/logo.svg" alt=""></div></a></div>
-						</div>
-						<div class="right-side">
-							<div class="burger">
-								<button class="icon" type="button" onclick="openBlock()" id="burgerBtn"><span></span><span></span><span></span><span></span></button>
-								<div class="other" id="other">
-									<div class="inner">
-										<div class="wrapper">
-											<div class="nav-center">
-												<div class="page__link"><a href="pagePrice/pagePrice.html">Ремонт ноутбуков</a></div>
-												<div class="page__link"><a href="pagePriceMonitor/pagePriceMonitor.html">Ремонт мониторов</a></div>
-												<div class="page__link"><a href="pagePk/pagePk.html">Ремонт ПК</a></div>
-												<div class="page__link"><a href="pagePriceMonoblok/pagePriceMonoblok.html">Ремонт моноблоков</a></div>
-												<div class="page__link"><a href="pageAbout/pageAbout.html">О нас</a></div>
-												<div class="page__link"><a href="pageDelivery/pageDelivery.html">Доставка</a></div>
-												<div class="page__link"><a href="pageGuarantee/pageGuarantee.html">Гарантия</a></div>
-												<div class="page__link"><a href="pageContacts/pageContacts.html">Контакты</a></div>
-												<div class="page__link moreb"><a href="tel: +7 (999) 999-99-99">+7 (999) 999-99-99</a></div>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<base href="build/">
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+	<title>Заголовок страницы</title>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+<body>
+	<div class="page">
+		<button class="debugGrid-btn debugGrid-btn__create" onclick="debugGridCreate()"></button>
+		<button class="debugGrid-btn debugGrid-btn__remove debugGrid-btn__hidden" onclick="debugGridRemove()"></button>
+		<div class="debugGrid debugGrid__z-index-negative"></div>
+		<header class="header">
+			<div class="wrapper">
+				<div class="header-mob">
+					<div class="left-side">
+						<div class="logo"><a href="../">
+								<div class="page__img"><img src="assets/img/logo.svg" alt=""></div>
+							</a></div>
+					</div>
+					<div class="right-side">
+						<div class="burger">
+							<button class="icon" type="button" onclick="openBlock()"
+								id="burgerBtn"><span></span><span></span><span></span><span></span></button>
+							<div class="other" id="other">
+								<div class="inner">
+									<div class="wrapper">
+										<div class="nav-center">
+											<div class="page__link"><a href="pagePrice/pagePrice.html">Ремонт
+													ноутбуков</a></div>
+											<div class="page__link"><a
+													href="pagePriceMonitor/pagePriceMonitor.html">Ремонт мониторов</a>
 											</div>
+											<div class="page__link"><a href="pagePk/pagePk.html">Ремонт ПК</a></div>
+											<div class="page__link"><a
+													href="pagePriceMonoblok/pagePriceMonoblok.html">Ремонт
+													моноблоков</a></div>
+											<div class="page__link"><a href="pageAbout/pageAbout.html">О нас</a></div>
+											<div class="page__link"><a
+													href="pageDelivery/pageDelivery.html">Доставка</a></div>
+											<div class="page__link"><a
+													href="pageGuarantee/pageGuarantee.html">Гарантия</a></div>
+											<div class="page__link"><a
+													href="pageContacts/pageContacts.html">Контакты</a></div>
+											<div class="page__link moreb"><a href="tel: +7 (999) 999-99-99">+7 (999)
+													999-99-99</a></div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="header-wrapper">
-						<div class="left">
-							<div class="logo"><a href="../">
-									<div class="page__img"><img src="assets/img/logo.svg" alt=""></div></a></div>
-							<div class="price"><a class="page__text" href="pagePrice/pagePrice.html">Услуги и цены</a>
-								<div class="price-hover"><a href="pagePrice/pagePrice.html">
-										<p class="page__text_sm-h">Ремонт ноутбуков</p></a><a href="pagePriceMonitor/pagePriceMonitor.html">
-										<p class="page__text_sm-h">Ремонт мониторов</p></a><a href="pagePk/pagePk.html">
-										<p class="page__text_sm-h">Ремонт ПК</p></a><a href="pagePriceMonoblok/pagePriceMonoblok.html">
-										<p class="page__text_sm-h">Ремонт моноблоков</p></a></div>
-							</div>
-							<div class="about"><a class="page__text" href="pageAbout/pageAbout.html">О нас</a></div>
-							<div class="delivery"><a class="page__text" href="pageDelivery/pageDelivery.html">Доставка</a></div>
-							<div class="Guarantee"><a class="page__text" href="pageGuarantee/pageGuarantee.html">Гарантия</a></div>
-							<div class="contacts"><a class="page__text" href="pageContacts/pageContacts.html">Контакты</a></div>
+				</div>
+				<div class="header-wrapper">
+					<div class="left">
+						<div class="logo"><a href="../">
+								<div class="page__img"><img src="assets/img/logo.svg" alt=""></div>
+							</a></div>
+						<div class="price"><a class="page__text" href="pagePrice/pagePrice.html">Услуги и цены</a>
+							<div class="price-hover"><a href="pagePrice/pagePrice.html">
+									<p class="page__text_sm-h">Ремонт ноутбуков</p>
+								</a><a href="pagePriceMonitor/pagePriceMonitor.html">
+									<p class="page__text_sm-h">Ремонт мониторов</p>
+								</a><a href="pagePk/pagePk.html">
+									<p class="page__text_sm-h">Ремонт ПК</p>
+								</a><a href="pagePriceMonoblok/pagePriceMonoblok.html">
+									<p class="page__text_sm-h">Ремонт моноблоков</p>
+								</a></div>
 						</div>
-						<div class="right"><a class="page__text" href="tel: +7 (999) 999-99-99">+7 (999) 999-99-99</a></div>
+						<div class="about"><a class="page__text" href="pageAbout/pageAbout.html">О нас</a></div>
+						<div class="delivery"><a class="page__text" href="pageDelivery/pageDelivery.html">Доставка</a>
+						</div>
+						<div class="Guarantee"><a class="page__text"
+								href="pageGuarantee/pageGuarantee.html">Гарантия</a></div>
+						<div class="contacts"><a class="page__text" href="pageContacts/pageContacts.html">Контакты</a>
+						</div>
+					</div>
+					<div class="right"><a class="page__text" href="tel: +7 (999) 999-99-99">+7 (999) 999-99-99</a></div>
+				</div>
+			</div>
+		</header>
+		<section class="guarantee-check">
+			<div class="wrapper">
+				<div class="guarantee-check-wrapper">
+					<button class="page__text_sm js-open-modal" data-modal="1">ПРОВЕРКА ГАРАНТИИ</button>
+					<div class="page__img"><img src="assets/img/arrow.svg" alt=""></div>
+				</div>
+			</div>
+		</section>
+		<section class="banner">
+			<div class="slider-banner">
+				<div class="item-banner">
+					<div class="item-wrapper-banner">
+						<div class="page__img"><img src="assets/img/banner-slider-1.png" alt=""></div>
+						<div class="item-item-banner">
+							<div class="bg">
+								<p class="page__text_30">Ремонт HP</p>
+								<p class="page__text_more">Закончить все дела в срок вы успеете, ведь с большинством
+									неисправностей мы разберемся всего за день.</p>
+							</div>
+						</div>
 					</div>
 				</div>
-			</header>
-			<section class="guarantee-check">
-				<div class="wrapper">
-					<div class="guarantee-check-wrapper">
-						<button class="page__text_sm js-open-modal" data-modal="1">ПРОВЕРКА ГАРАНТИИ</button>
-						<div class="page__img"><img src="assets/img/arrow.svg" alt=""></div>
-					</div>
-				</div>
-			</section>
-			<section class="banner">
-				<div class="slider-banner">
-					<div class="item-banner">
-						<div class="item-wrapper-banner">
-							<div class="page__img"><img src="assets/img/banner-slider-1.png" alt=""></div>
-							<div class="item-item-banner">
-								<div class="bg">
-									<p class="page__text_30">Ремонт HP</p>
-									<p class="page__text_more">Закончить все дела в срок вы успеете, ведь с большинством неисправностей мы разберемся всего за день.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item-banner">
-						<div class="item-wrapper-banner">
-							<div class="page__img"><img src="assets/img/banner-slider-2-2.png" alt=""></div>
-							<div class="item-item-banner">
-								<div class="bg">
-									<p class="page__text_30">Выезжаем!</p>
-									<p class="page__text_more">Да, да, не нужно никуда ехать, мы сами приедем. Домой, в офис, в кафе? Без проблем! А все потому, что мы ценим и бережем ваше время.</p>
-									<div class="row-two"><a class="page__text_vsm" href="pageDelivery/pageDelivery.html">Подробнее</a>
-										<div class="page__img"><img src="assets/img/arrow-more.svg" alt=""></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item-banner">
-						<div class="item-wrapper-banner">
-							<div class="page__img"><img src="assets/img/3-3.png" alt=""></div>
-							<div class="item-item-banner">
-								<div class="bg">
-									<p class="page__text_30">Ремонтируем!</p>
-									<p class="page__text_more">К вашей технике допускаются только профессионалы и оригинальные запчасти. И то, и то есть в наличии</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item-banner">
-						<div class="item-wrapper-banner">
-							<div class="page__img"><img src="assets/img/4-4.png" alt=""></div>
-							<div class="item-item-banner">
-								<div class="bg">
-									<p class="page__text_30">Гарантируем!</p>
-									<p class="page__text_more">Вместе с отремонтированным устройством, мы вам еще и гарантию на 12 месяцев вручим </p>
-									<div class="row-two"><a class="page__text_vsm" href="pageGuarantee/pageGuarantee.html">Подробнее</a>
-										<div class="page__img"><img src="assets/img/arrow-more.svg" alt=""></div>
-									</div>
+				<div class="item-banner">
+					<div class="item-wrapper-banner">
+						<div class="page__img"><img src="assets/img/banner-slider-2-2.png" alt=""></div>
+						<div class="item-item-banner">
+							<div class="bg">
+								<p class="page__text_30">Выезжаем!</p>
+								<p class="page__text_more">Да, да, не нужно никуда ехать, мы сами приедем. Домой, в
+									офис, в кафе? Без проблем! А все потому, что мы ценим и бережем ваше время.</p>
+								<div class="row-two"><a class="page__text_vsm"
+										href="pageDelivery/pageDelivery.html">Подробнее</a>
+									<div class="page__img"><img src="assets/img/arrow-more.svg" alt=""></div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="prevArrow" id="prevArrow"><img src="assets/img/arrow-left-slider.svg"></div>
-				<div class="nextArrow" id="nextArrow"><img src="assets/img/arrow-right-slider.svg"></div>
-				<div class="slider-banner-mob">
-					<div class="page__img"><img src="assets/img/mob-1.png" alt=""></div>
-					<div class="page__img"><img src="assets/img/mob-2.png" alt=""></div>
-					<div class="page__img"><img src="assets/img/mob-3.png" alt=""></div>
-					<div class="page__img"><img src="assets/img/mob-4.png" alt=""></div>
-					<div class="page__img"><img src="assets/img/mob-5.png" alt=""></div>
-				</div>
-			</section>
-			<section class="choose-device">
-				<div class="wrapper">
-					<p class="page__text_else">Выберите тип вашего устройства</p>
-					<div class="choose-device-wrapper">
-						<div class="item-wrapper">
-							<div class="item"><a href="pagePrice/pagePrice.html">
-									<div class="page__img"><img src="assets/img/device-1.png" alt=""></div></a>
-								<p class="page__text_more">Ремонт Ноутбуков</p>
+				<div class="item-banner">
+					<div class="item-wrapper-banner">
+						<div class="page__img"><img src="assets/img/3-3.png" alt=""></div>
+						<div class="item-item-banner">
+							<div class="bg">
+								<p class="page__text_30">Ремонтируем!</p>
+								<p class="page__text_more">К вашей технике допускаются только профессионалы и
+									оригинальные запчасти. И то, и то есть в наличии</p>
 							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item-banner">
+					<div class="item-wrapper-banner">
+						<div class="page__img"><img src="assets/img/4-4.png" alt=""></div>
+						<div class="item-item-banner">
+							<div class="bg">
+								<p class="page__text_30">Гарантируем!</p>
+								<p class="page__text_more">Вместе с отремонтированным устройством, мы вам еще и гарантию
+									на 12 месяцев вручим </p>
+								<div class="row-two"><a class="page__text_vsm"
+										href="pageGuarantee/pageGuarantee.html">Подробнее</a>
+									<div class="page__img"><img src="assets/img/arrow-more.svg" alt=""></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="prevArrow" id="prevArrow"><img src="assets/img/arrow-left-slider.svg"></div>
+			<div class="nextArrow" id="nextArrow"><img src="assets/img/arrow-right-slider.svg"></div>
+			<div class="slider-banner-mob">
+				<div class="page__img"><img src="assets/img/mob-1.png" alt=""></div>
+				<div class="page__img"><img src="assets/img/mob-2.png" alt=""></div>
+				<div class="page__img"><img src="assets/img/mob-3.png" alt=""></div>
+				<div class="page__img"><img src="assets/img/mob-4.png" alt=""></div>
+				<div class="page__img"><img src="assets/img/mob-5.png" alt=""></div>
+			</div>
+		</section>
+		<section class="choose-device">
+			<div class="wrapper">
+				<p class="page__text_else">Выберите тип вашего устройства</p>
+				<div class="choose-device-wrapper">
+					<div class="item-wrapper">
+						<div class="item"><a href="pagePrice/pagePrice.html">
+								<div class="page__img"><img src="assets/img/device-1.png" alt=""></div>
+							</a>
+							<p class="page__text_more">Ремонт Ноутбуков</p>
+						</div>
+						<div class="hover"><a href="pagePrice/pagePrice.html">
+								<p class="page__text_more">Настройка и ремонт ноутбуков у вас дома, в офисе или в нашем
+									сервисном центре.</p>
+							</a></div>
+					</div>
+					<div class="item-wrapper">
+						<div class="item"><a href="pagePriceMonitor/pagePriceMonitor.html">
+								<div class="page__img"><img src="assets/img/device-2.png" alt=""></div>
+							</a>
+							<p class="page__text_more">Ремонт Мониторов</p>
+						</div>
+						<div class="hover"><a href="pagePriceMonitor/pagePriceMonitor.html">
+								<p class="page__text_more">текст ховер</p>
+							</a></div>
+					</div>
+					<div class="item-wrapper">
+						<div class="item"><a href="pagePk/pagePk.html">
+								<div class="page__img"><img src="assets/img/device-3.png" alt=""></div>
+							</a>
+							<p class="page__text_more">Ремонт ПК</p>
+						</div>
+						<div class="hover"><a href="pagePk/pagePk.html">
+								<p class="page__text_more">текст ховер</p>
+							</a></div>
+					</div>
+					<div class="item-wrapper">
+						<div class="item"><a href="pagePriceMonoblok/pagePriceMonoblok.html">
+								<div class="page__img"><img src="assets/img/device-4.png" alt=""></div>
+							</a>
+							<p class="page__text_more">Ремонт Моноблоков</p>
+						</div><a href="pagePriceMonoblok/pagePriceMonoblok.html">
 							<div class="hover"><a href="pagePrice/pagePrice.html">
-									<p class="page__text_more">Настройка и ремонт ноутбуков у вас дома, в офисе или  в нашем сервисном центре.</p></a></div>
-						</div>
-						<div class="item-wrapper">
-							<div class="item"><a href="pagePriceMonitor/pagePriceMonitor.html">
-									<div class="page__img"><img src="assets/img/device-2.png" alt=""></div></a>
-								<p class="page__text_more">Ремонт Мониторов</p>
-							</div>
-							<div class="hover"><a href="pagePriceMonitor/pagePriceMonitor.html">
-									<p class="page__text_more">текст ховер</p></a></div>
-						</div>
-						<div class="item-wrapper">
-							<div class="item"><a href="pagePk/pagePk.html">
-									<div class="page__img"><img src="assets/img/device-3.png" alt=""></div></a>
-								<p class="page__text_more">Ремонт ПК</p>
-							</div>
-							<div class="hover"><a href="pagePk/pagePk.html">
-									<p class="page__text_more">текст ховер</p></a></div>
-						</div>
-						<div class="item-wrapper">
-							<div class="item"><a href="pagePriceMonoblok/pagePriceMonoblok.html">
-									<div class="page__img"><img src="assets/img/device-4.png" alt=""></div></a>
-								<p class="page__text_more">Ремонт Моноблоков</p>
-							</div><a href="pagePriceMonoblok/pagePriceMonoblok.html">
-								<div class="hover"><a href="pagePrice/pagePrice.html">
-										<p class="page__text_more">текст ховер</p></a></div></a>
-						</div>
+									<p class="page__text_more">текст ховер</p>
+								</a></div>
+						</a>
 					</div>
 				</div>
-			</section>
-			<section class="callback">
-				<div class="wrapper">
-					<p class="page__text_else">Обратный звонок</p>
-					<div class="callback-wrapper">
-						<div class="callback-item">
-							<p class="page__text_vsm">Ваш телефон <span> *</p>
-							<form action="">
+			</div>
+		</section>
+		<section class="callback">
+			<div class="wrapper">
+				<p class="page__text_else">Обратный звонок</p>
+				<div class="callback-wrapper">
+					<div class="callback-item">
+						<p class="page__text_vsm">Ваш телефон <span> *</p>
+						<form action="">
+							<input class="phone_mask" type="text" placeholder="+7 (___) ___-__-__">
+						</form>
+					</div>
+					<div class="callback-item">
+						<p class="page__text_vsm">Ваше устройство <span> *</span></p>
+						<div class="__select" data-state="">
+							<div class="__select__title" data-default="1">Тип устройства</div>
+							<div class="__select__content">
+								<input class="__select__input" id="singleSelect0" type="radio" data-state="" checked>
+								<label class="__select__label" for="singleSelect0">Компьютер</label>
+								<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect"
+									value="1">
+								<label class="__select__label" for="singleSelect1">Монитор</label>
+								<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect"
+									value="2">
+								<label class="__select__label" for="singleSelect1">ПК</label>
+								<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect"
+									value="2">
+								<label class="__select__label" for="singleSelect1">Моноблок</label>
+							</div>
+						</div>
+					</div>
+					<div class="callback-item">
+						<button class="page__btn js-open-modal" data-modal="2">ОСТАВИТЬ ЗАЯВКУ</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer-wrapper">
+					<div class="left">
+						<div class="logo"><a href="../">
+								<div class="page__img"><img src="assets/img/logo-2.svg" alt=""></div>
+							</a></div>
+						<p class="page__text_vsm">Сертифицированный сервисный центр Москва</p>
+					</div>
+					<div class="mid">
+						<p class="page__text_else-m">Контакты</p><a class="page__text_vsm"
+							href="tel: 8 (999) 999-99-99">8 (999) 999-99-99</a><a class="page__text_vsm"
+							href="#">Вконтакте</a>
+					</div>
+					<div class="right"><a class="page__text_else-m" href="#">Политика конфеденциальности</a></div>
+				</div>
+			</div>
+		</footer>
+		<div class="modal" data-modal="1">
+			<div class="modal__in modal-container">
+				<div class="modalToggles">
+					<button class="close">
+						<div class="page__img"><img class="js-modal-close" src="assets/img/krestik-2.svg" alt=""
+								data-modal="modal"></div>
+					</button>
+					<div class="modal-vhod active" id="vhod-1">
+						<p class="page__text_else">Проверка гарантии</p>
+						<form class="form" action="">
+							<div class="form-wrapper">
+								<p class="page__text_vsm">Cтрана/регион приобретения <span> *</p>
+								<input type="text" placeholder="Россия">
+								<p class="page__text_vsm">Серийный номер <span> *</p>
+								<input type="text" placeholder="Пример: HU265BM18V">
+								<p class="page__text_vsm">Ваш телефон <span> *</p>
+								<input class="smmb" type="text" placeholder="Пример: HU265BM18V">
+								<p class="page__text_vsm-2">Заполнив и отправив эту форму, вы предоставляете свое
+									согласие на использование ваших данных в соотвествии с заявлением о
+									конфиденциалности HP.<span> Подробнее о политике конфиденциалности HP</p>
+								<div class="page__btn">ПРОВЕРИТЬ ГАРАНТИЮ</div>
+								<p class="page__text_vsm"> <span> * </span> Обязательные поля</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="overlay js-overlay-modal"></div>
+		</div>
+		<div class="modal" data-modal="2">
+			<div class="modal__in modal-container">
+				<div class="modalToggles">
+					<button class="close js-modal-close">
+						<div class="page__img"><img class="js-modal" src="assets/img/krestik-2.svg" alt=""
+								data-modal="modal-2"></div>
+					</button>
+					<div class="modal-vhod active" id="vhod-1">
+						<p class="page__text_else mb20">Оставьте заявку</p>
+						<p class="page__text mb54">Или просто позвоните по тел. 8 (999) 999-99-99</p>
+						<form class="form" action="">
+							<div class="form-wrapper">
+								<p class="page__text_vsm">Ваше имя <span> *</p>
+								<input type="text" placeholder="Иван">
+								<p class="page__text_vsm">Ваш телефон <span> *</p>
 								<input class="phone_mask" type="text" placeholder="+7 (___) ___-__-__">
-							</form>
-						</div>
-						<div class="callback-item">
-							<p class="page__text_vsm">Ваше устройство <span> *</span></p>
-							<div class="__select" data-state="">
-								<div class="__select__title" data-default="1">Тип устройства</div>
-								<div class="__select__content">
-									<input class="__select__input" id="singleSelect0" type="radio" data-state="" checked>
-									<label class="__select__label" for="singleSelect0">Компьютер</label>
-									<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect" value="1">
-									<label class="__select__label" for="singleSelect1">Монитор</label>
-									<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect" value="2">
-									<label class="__select__label" for="singleSelect1">ПК</label>
-									<input class="__select__input" id="singleSelect1" type="radio" name="singleSelect" value="2">
-									<label class="__select__label" for="singleSelect1">Моноблок</label>
-								</div>
+								<p class="page__text_vsm-2">Заполнив и отправив эту форму, вы предоставляете свое
+									согласие на использование ваших данных в соотвествии с заявлением о
+									конфиденциалности HP.<span> Подробнее о политике конфиденциалности HP</p>
+								<div class="page__btn">Перезвоните мне</div>
+								<p class="page__text_vsm"> <span> * </span> Обязательные поля</p>
 							</div>
-						</div>
-						<div class="callback-item">
-							<button class="page__btn js-open-modal" data-modal="2">ОСТАВИТЬ ЗАЯВКУ</button>
-						</div>
-					</div>
-				</div>
-			</section>
-			<footer class="footer">
-				<div class="wrapper">
-					<div class="footer-wrapper">
-						<div class="left">
-							<div class="logo"><a href="../">
-									<div class="page__img"><img src="assets/img/logo-2.svg" alt=""></div></a></div>
-							<p class="page__text_vsm">Сертифицированный сервисный центр Москва</p>
-						</div>
-						<div class="mid">
-							<p class="page__text_else-m">Контакты</p><a class="page__text_vsm" href="tel: 8 (999) 999-99-99">8 (999) 999-99-99</a><a class="page__text_vsm" href="#">Вконтакте</a>
-						</div>
-						<div class="right"><a class="page__text_else-m" href="#">Политика конфеденциальности</a></div>
-					</div>
-				</div>
-			</footer>
-			<div class="modal" data-modal="1">
-				<div class="modal__in modal-container">
-					<div class="modalToggles">
-						<button class="close">
-							<div class="page__img"><img class="js-modal-close" src="assets/img/krestik-2.svg" alt="" data-modal="modal"></div>
-						</button>
-						<div class="modal-vhod active" id="vhod-1">
-							<p class="page__text_else">Проверка гарантии</p>
-							<form class="form" action="">
-								<div class="form-wrapper">
-									<p class="page__text_vsm">Cтрана/регион приобретения <span> *</p>
-									<input type="text" placeholder="Россия">
-									<p class="page__text_vsm">Серийный номер <span> *</p>
-									<input type="text" placeholder="Пример: HU265BM18V">
-									<p class="page__text_vsm">Ваш телефон <span> *</p>
-									<input class="smmb" type="text" placeholder="Пример: HU265BM18V">
-									<p class="page__text_vsm-2">Заполнив и отправив эту форму, вы предоставляете свое согласие на использование ваших данных в соотвествии с заявлением о конфиденциалности HP.<span> Подробнее о политике конфиденциалности HP</p>
-									<div class="page__btn">ПРОВЕРИТЬ ГАРАНТИЮ</div>
-									<p class="page__text_vsm"> <span> * </span> Обязательные поля</p>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div><div class="overlay js-overlay-modal"></div>
-			</div>
-			<div class="modal" data-modal="2">
-				<div class="modal__in modal-container">
-					<div class="modalToggles">
-						<button class="close js-modal-close">
-							<div class="page__img"><img class="js-modal" src="assets/img/krestik-2.svg" alt="" data-modal="modal-2"></div>
-						</button>
-						<div class="modal-vhod active" id="vhod-1">
-							<p class="page__text_else mb20">Оставьте заявку</p>
-							<p class="page__text mb54">Или просто позвоните по тел. 8 (999) 999-99-99</p>
-							<form class="form" action="">
-								<div class="form-wrapper">
-									<p class="page__text_vsm">Ваше имя <span> *</p>
-									<input type="text" placeholder="Иван">
-									<p class="page__text_vsm">Ваш телефон <span> *</p>
-									<input class="phone_mask" type="text" placeholder="+7 (___) ___-__-__">
-									<p class="page__text_vsm-2">Заполнив и отправив эту форму, вы предоставляете свое согласие на использование ваших данных в соотвествии с заявлением о конфиденциалности HP.<span> Подробнее о политике конфиденциалности HP</p>
-									<div class="page__btn">Перезвоните мне</div>
-									<p class="page__text_vsm"> <span> * </span> Обязательные поля</p>
-								</div>
-							</form>
-						</div>
+						</form>
 					</div>
 				</div>
 			</div>
-		</div><script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
-		<script src="js/main.js"></script>
-	</body>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+		type="text/javascript"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+		type="text/javascript"></script>
+	<script src="js/main.js"></script>
+</body>
+
 </html>
